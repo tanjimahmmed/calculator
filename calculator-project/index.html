@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Project Calculator</title>
+    <!-- favicon -->
+    <link href="img/" rel="shortcut icon" type="image/x-icon">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="css/fontawesome/css/font-awesome.min.css">
+    <!-- css file -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/magnafic.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+   <!-- start -->
+   <div class="main">
+    <div class="calculator_table">
+        <div class="calculator_table_cell">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 offset-md-5">
+                        <form name="form">
+                            <input class="textview" name="textview">
+                        </form>
+                            <table>
+                            <tr>
+                                <td><input type="button" class="button" value="c" onclick="clean()"></td>
+                                <td><input type="button" class="button" value="<" onclick="back()"></td>
+                                <td><input type="button" class="button" value="/" onclick="insert('/')"></td>
+                                <td><input type="button" class="button" value="x" onclick="insert('*')"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="button" class="button" value="7" onclick="insert(7)"></td>
+                                <td><input type="button" class="button" value="8" onclick="insert(8)"></td>
+                                <td><input type="button" class="button" value="9" onclick="insert(9)"></td>
+                                <td><input type="button" class="button" value="-" onclick="insert('-')"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="button" class="button" value="4" onclick="insert(4)"></td>
+                                <td><input type="button" class="button" value="5" onclick="insert(5)"></td>
+                                <td><input type="button" class="button" value="6" onclick="insert(6)"></td>
+                                <td><input type="button" class="button" value="+" onclick="insert('+')"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="button" class="button" value="1" onclick="insert(1)"></td>
+                                <td><input type="button" class="button" value="2" onclick="insert(2)"></td>
+                                <td><input type="button" class="button" value="3" onclick="insert(3)"></td>
+                                <td rowspan="5"><input type="button" class="button spacial-height" value="=" onclick="equal()"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><input type="button" class="button special-btns" value="0" onclick="insert(0)"></td>
+                                <td><input type="button" class="button" value="." onclick="insert('.')"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+   <!-- end -->
+
+   
+   <!-- js other need file -->
+    <script src="js/jquary.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/jquery.scrolly.js"></script>
+    <script src="js/Magnific.js"></script>
+    <!-- main java script -->
+    <script src="js/custom.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
